@@ -1,0 +1,25 @@
+.main__menu--slider::-webkit-scrollbar {
+  width: 0;
+}
+
+.main__menu--slider {
+  padding: 0 16px;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  position: relative;
+  overflow: auto;
+}
+
+@media (min-width: 767px) {
+  .main__menu--slider {
+    padding: 0 24px;
+  }
+}

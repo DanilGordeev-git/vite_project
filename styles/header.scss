@@ -1,0 +1,90 @@
+@import "./variables.scss";
+@import "./slider.scss";
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  display: flex;
+}
+li {
+  list-style: none;
+}
+#app {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.aside__menu {
+  position: fixed;
+  display: none;
+  width: 320px;
+  height: 100vh;
+  background-color: white;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px 22px;
+  }
+  &--list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 7px 21px;
+    gap: 28px;
+    &--items {
+      font-family: "TT Lakes";
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      color: $text-color;
+      cursor: pointer;
+      &:hover {
+        transition: color 1s;
+        color: $butt-color;
+      }
+    }
+  }
+  &--icons {
+    margin: 0;
+    padding: 0px 18px 16px;
+    display: flex;
+    gap: 16px;
+  }
+  &--mail {
+    padding-left: 19px;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+  &--number {
+    padding: 12px 19px 0px;
+    font-family: "TT Lakes";
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.9px;
+  }
+  &--lang {
+    margin: 0;
+    display: flex;
+    gap: 7px;
+    padding: 40px 21px;
+    padding-bottom: 16px;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
+}
+.ul {
+  padding: 0px;
+}
